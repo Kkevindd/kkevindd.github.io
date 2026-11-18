@@ -157,7 +157,7 @@
     width: 36px;
     height: 36px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 50%;
 
     @include breakpoint($large) {
       width: 175px;
@@ -174,7 +174,7 @@
 
       @include breakpoint($large) {
         object-fit: contain;
-        transform: scale(0.9);
+        transform: scale(1.05);
       }
     }
   }
