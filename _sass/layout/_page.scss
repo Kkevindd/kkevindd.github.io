@@ -50,14 +50,113 @@
 
 .page__content {
 
-  .publication__image {
-    display: block;
-    width: 84%;
-    height: auto;
-    margin: 0 auto 1.5em;
+  .publication-list {
+    margin-top: 1em;
+  }
 
-    @media (max-width: 600px) {
+  .publication-card {
+    display: grid;
+    grid-template-columns: minmax(0, 32%) minmax(0, 1fr);
+    gap: 1.25em;
+    align-items: center;
+    padding: 1.25em;
+    margin-bottom: 1.25em;
+    border: 1px solid var(--global-border-color);
+    border-left: 3px solid var(--global-link-color);
+    border-radius: 6px;
+    background: var(--global-bg-color);
+    scroll-margin-block-start: $masthead-height;
+
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .publication-card__figure {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+
+    img {
+      display: block;
       width: 100%;
+      height: auto;
+      border: 1px solid var(--global-border-color);
+      border-radius: 4px;
+    }
+  }
+
+  .publication-card__body {
+    min-width: 0;
+  }
+
+  .publication-card__category {
+    display: inline-block;
+    margin-bottom: 0.4em;
+    color: var(--global-link-color);
+    font-size: 0.7em;
+    font-weight: 700;
+  }
+
+  .publication-card__title {
+    margin: 0 0 0.5em;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .publication-card__venue {
+    display: inline-block;
+    margin-left: 0.35em;
+    padding: 0.15em 0.55em;
+    border: 1px solid var(--global-link-color);
+    border-radius: 3px;
+    color: var(--global-link-color);
+    font-size: 0.7em;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .publication-card__authors,
+  .publication-card__summary {
+    margin: 0 0 0.65em;
+    font-size: 0.78em;
+    line-height: 1.5;
+  }
+
+  .publication-card__authors {
+    color: var(--global-text-color-light);
+
+    strong {
+      color: var(--global-text-color);
+    }
+  }
+
+  .publication-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+  }
+
+  .publication-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.25em 0.7em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+    color: var(--global-text-color);
+    font-size: 0.72em;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--global-link-color);
+      color: var(--global-link-color);
+      text-decoration: none;
     }
   }
 
