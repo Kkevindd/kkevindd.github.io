@@ -2,5 +2,8 @@ main:
   - title: "About"
     url: /
 
-  - title: "Publications"
+  - title: "News"
+    url: /#news
+
+  - title: "Publication"
     url: /#publications

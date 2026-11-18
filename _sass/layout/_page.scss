@@ -50,6 +50,17 @@
 
 .page__content {
 
+  .publication__image {
+    display: block;
+    width: 84%;
+    height: auto;
+    margin: 0 auto 1.5em;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--global-border-color);
