@@ -17,38 +17,4 @@ redirect_from:
 
 <h2 id="publications">⭐ Publications</h2>
 
-<div class="publication-list">
-  <article class="publication-card" id="pub-iggt4d">
-    <a class="publication-card__figure" href="{{ '/me/images/iggt4d.png' | relative_url }}" aria-label="Open the full IGGT4D figure">
-      <img src="{{ '/me/images/iggt4d.png' | relative_url }}" alt="IGGT4D overview: streaming 4D reconstruction, instance features, dataset, and applications" width="2642" height="1517" loading="lazy" decoding="async">
-    </a>
-    <div class="publication-card__body">
-      <span class="publication-card__category">4D Scene Understanding</span>
-      <h3 class="publication-card__title">IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer <span class="publication-card__venue">NeurIPS 2026</span></h3>
-      <p class="publication-card__authors">Zhengyu Zou, Hao Li, <strong>Kuixuan Jiao</strong>, Liu Liu, Tingyang Xiao, Xiaolin Zhou, Fangzhou Hong, Zhizhong Su, Dingwen Zhang, Ziwei Liu</p>
-      <p class="publication-card__summary">A streaming 4D scene understanding framework that reconstructs geometry and tracks consistent object identities across video frames.</p>
-      <div class="publication-card__links">
-        <a class="publication-card__link" href="https://iggt4d.github.io/"><i class="fas fa-globe" aria-hidden="true"></i>Web</a>
-        <a class="publication-card__link" href="https://arxiv.org/abs/2607.19228"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
-        <a class="publication-card__link" href="https://github.com/HorizonRobotics/IGGT4D"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="publication-card" id="pub-holi-spatial-360">
-    <a class="publication-card__figure" href="{{ '/me/images/holispatial360.png' | relative_url }}" aria-label="Open the full Holi-Spatial 360 figure">
-      <img src="{{ '/me/images/holispatial360.png' | relative_url }}" alt="Holi-Spatial 360 overview: panoramic inputs, 3D reconstruction, spatial reasoning, and dataset" width="2002" height="1086" loading="lazy" decoding="async">
-    </a>
-    <div class="publication-card__body">
-      <span class="publication-card__category">Spatial Reasoning</span>
-      <h3 class="publication-card__title">Holi-Spatial 360: Generative Reconstruction from Sparse Panoramas for Spatial Rendering and Intelligence <span class="publication-card__venue">arXiv 2026</span></h3>
-      <p class="publication-card__authors">Yuanyuan Gao, Zhirui Liu, Yuning Gong, Yifei Liu, Yifan Zhan, <strong>Kuixuan Jiao</strong>, Xiaolong Zhou, Yifan Yang, Hongjie Zhang, Xue Yang, Dan Xu, Zhihang Zhong</p>
-      <p class="publication-card__summary">Reconstructs annotated multi-room 3D environments from sparse panoramas and supports rendering, grounding, and spatial reasoning.</p>
-      <div class="publication-card__links">
-        <a class="publication-card__link" href="https://visionary-laboratory.github.io/Holi-spatial-360/"><i class="fas fa-globe" aria-hidden="true"></i>Web</a>
-        <a class="publication-card__link" href="https://arxiv.org/abs/2610.19502"><i class="fas fa-file-lines" aria-hidden="true"></i>Paper</a>
-        <a class="publication-card__link" href="https://github.com/Visionary-Laboratory/Holi-spatial-360"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
-      </div>
-    </div>
-  </article>
-</div>
+{% include publication-cards.html %}
