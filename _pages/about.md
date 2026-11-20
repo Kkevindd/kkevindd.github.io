@@ -18,3 +18,7 @@ redirect_from:
 <h2 id="publications">⭐ Publications</h2>
 
 {% include publication-cards.html %}
+
+<h2 id="visitors">📊 Visitors</h2>
+
+{% include visitor-counter.html %}
